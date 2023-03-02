@@ -25,6 +25,7 @@
 // // run the function by add what the user's write in the prompt inside our function and check the reverse word of the input
 // checkPalindrome(string);
 
+//NEW CODE
 let word = prompt('Enter a word: ');
 //refers to the function "palindromeCheck for the let word = prompt "
 let wordReverse = palindromeCheck(word);
@@ -38,16 +39,20 @@ if(word == wordReverse){
     console.log(`It is not a palindrome`);
     palindromeDisplay.textContent = `It is not a palindrome`;
 }
-// our function ! let "..." = ..." exist only inside the function
+//This line defines the function and declares that it takes in one parameter, input
 function palindromeCheck(input){
+// This line declares a new variable called 'textInput' and initializes it to an empty string. This variable will be used to store the reversed string.
   let textInput = '';
-
+// This line declares a new variable called 'i' and initializes it to the index of the last character in the input string
   let i = input.length - 1;
-
+// while loop that continues as long as i is greater than or equal to 0. During each iteration of the loop, 
+// it takes the character at index i of the input string and appends it to the end of the textInput string. 
+// It then decrements i by 1, so that the next iteration of the loop will get the previous character in the input string.
   while (i >= 0) {
     textInput += input[i];
     i--;
   }
-
+//contain the reversed version of the input string.
   return textInput;
 }
+//REMEBER: let "..." = ..." exist only inside the function !
