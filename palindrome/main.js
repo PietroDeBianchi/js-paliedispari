@@ -22,5 +22,5 @@ let palindromeDisplay = document.getElementById('palindrome')
 
 //take input from the prompt
 const string = prompt('Enter a word: ');
-// run the function
+// run the function by add what the user's write in the prompt inside our function and check the reverse word of the input
 checkPalindrome(string);
