@@ -3,7 +3,7 @@ function generateNumber(min, max) {
   const numberRandom = Math.floor((Math.random() * (max - min + 1)) + min);
   return numberRandom;
 };
-// Function to check if a number is: even = true, not even = false
+// Function to check if a number is: even = true, not even = false | return do this!
 function isEven(numero) {
   return numero % 2 === 0;
 }
@@ -21,7 +21,7 @@ const sumIsEven = isEven(sum);
 // const to determine who won
 let winner = document.getElementById('winnerGame');
 // if (userchoice is even and the sum cumputerNum + userNum is even) o (userchoice is odd and the sum cumputerNum + userNum is not even)
-// sumIsEven = true / !sumIsEven = false
+// sumIsEven = true / !sumIsEven = not true (false)
 if ((userChoice === "even" && sumIsEven) || (userChoice === "odd" && !sumIsEven)) {
   winner.textContent = "Congrats! You Win!";
 } else {
