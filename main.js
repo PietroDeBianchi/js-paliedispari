@@ -30,4 +30,4 @@ if ((userChoice === "even" && sumIsEven) || (userChoice === "odd" && !sumIsEven)
 // Display in the log the results
 console.log(`You chose ${userChoice} and ${userNumber}.`);
 console.log(`The computer chose ${computerNumber}.`);
-console.log(`The sum is ${sum}, which is ${sumIsEven ? "even" : "odd"}.`);
+console.log(`The sum is ${sum}.`);
