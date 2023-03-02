@@ -24,7 +24,7 @@ let winner = document.getElementById('winnerGame');
 if ((userChoice === "even" && sumIsEven) || (userChoice === "odd" && !sumIsEven)) {
   winner.textContent = "Congrats! You Win!";
 } else {
-    winner.textContent = "Sorry!The Computer Win!";
+  winner.textContent = "Sorry!The Computer Win!";
 }
 
 // Display in the log the results
