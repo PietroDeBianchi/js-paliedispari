@@ -9,9 +9,18 @@ function isEven(numero) {
 }
 
 // Prompt the user for  even or odd selection
-const userChoice = prompt("Choose even or odd");
+let userChoice;
+do {
+  userChoice = prompt("Choose even or odd");
+} while (userChoice !== "even" && userChoice !== "odd");
+
+
 // Prompt the user for number selection and parseInt to generate a number from a string
-const userNumber = parseInt(prompt("Enter a number between 1 and 5:"));
+let userNumber;
+do {
+  userNumber = parseInt(prompt("Enter a number between 1 and 5:"));
+} while (isNaN(userNumber) || userNumber < 1 || userNumber > 5);
+
 // Generate a random number for the computer
 const computerNumber = generateNumber(1, 5);
 // Add the two numbers together
